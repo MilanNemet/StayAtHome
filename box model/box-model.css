@@ -1,0 +1,54 @@
+/* kívülről befelé */
+html {
+  margin: 0;
+  padding: 0;
+  color: black;
+  background: #101010;
+  font-family: calibri;
+  font-weight: bold;
+}
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.background {
+  border: 5px solid yellow;
+  padding: 50px;
+  margin: 50px; /*legkülső div-konténer, csak itt van margin*/
+  width: 300px;
+}
+
+.foreground {
+  border: 5px solid cyan;
+  padding: 25px;
+}
+
+.box {
+  border: 5px solid black;
+  padding: 50px;
+  background: peru; /*karton doboz*/
+  text-align: center;
+  
+  font-size: 30px; /* nem a .box-ra vonatkozik!
+   * a TV, mint szöveg, egy ún. 'TextNode', nincs CSS Selectora, 
+   * csak az őt tartalmazó elemeken keresztül lehet elérni
+   **************************************************************
+   */
+}
+
+.green {
+  background: green;
+}
+.red {
+  background: red;
+}
+span {
+  color: white;
+  font-size: 13px;
+  position: relative;
+  top: -20px;
+  margin: 0;
+  padding: 0;
+}
