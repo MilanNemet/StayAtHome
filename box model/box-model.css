@@ -1,17 +1,4 @@
 /* kívülről befelé */
-html {
-  margin: 0;
-  padding: 0;
-  color: black;
-  background: #101010;
-  font-family: calibri;
-  font-weight: bold;
-}
-body {
-  margin: 0;
-  padding: 0;
-  position: relative;
-}
 
 .background {
   border: 5px solid yellow;
@@ -51,4 +38,18 @@ span {
   top: -20px;
   margin: 0;
   padding: 0;
+}
+/*out of scope yet*/
+html {
+  margin: 0;
+  padding: 0;
+  color: black;
+  background: #101010;
+  font-family: calibri;
+  font-weight: bold;
+}
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
 }
