@@ -1,31 +1,51 @@
 ﻿.FlexBox {
-    display: flex;
+    margin: auto;
+    margin-top: 1%;
+    position: relative;
+    display: block;
     justify-content: space-around;
-    
-
+    align-content: center;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    width: 400px;
+    height: 400px;
+    border: 1px solid gray;
+    overflow: auto;
+    resize: both;
 }
+
 
 .inner {
-    width: 300px;
-    height: 300px;
+    position: absolute;
+    display: inline-block;
+    width: 42%;
+    height: 42%;
 }
-
-
-
-
-
-
-
-
 
 .red {
     background-color: rgba(255,0,0,0.5);
 }
-
 .green {
     background-color: rgba(0,255,0,0.5);
 }
-
 .blue {
     background-color: rgba(0,0,255,0.5);
+}
+
+.left {
+    top: 30px;
+    left: 30px;
+}
+.right {
+    top: 30px;
+    right: 30px;
+}
+.bottom {
+    bottom: 30px;
+    left: 30%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
 }
