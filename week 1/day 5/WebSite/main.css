@@ -1,16 +1,32 @@
-﻿body
-{
+﻿body {
     margin: 0;
     padding: 0;
     text-decoration: none;
-    color: pink;
+    color: #222;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    vertical-align: middle;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
 }
 
+nav {
+    color: white;
+    background: #222;
+    font-size: 2em;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5vmin;
+}
+    nav > a {
+        background: yellow;
+        cursor: pointer;
+        display: inline-block;
+    }
+
 header {
-    background-color: black;
+    background-color: aliceblue;
     background-image: url("http://stayathome-syllabus.greenfox.academy/week01/assets/first-website-header.png");
     background-attachment: fixed;
     background-repeat: no-repeat;
