@@ -1,3 +1,35 @@
 ﻿body
 {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: pink;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+header {
+    background-color: black;
+    background-image: url("http://stayathome-syllabus.greenfox.academy/week01/assets/first-website-header.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 5%;
+}
+h1 {
+    color: #222 grey;
+    font-size: 9vh;
+    line-height: 9vh;
+}
+    h1::first-line {
+        font-size: 4.5vh;
+        line-height: 4.5vh;
+    }
+
+
+
+.abrilff {
+    font-family: 'Abril Fatface', cursive;
 }
