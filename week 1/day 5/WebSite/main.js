@@ -1,5 +1,3 @@
-// JavaScript source code
-
 var sections;
 var links;
 
