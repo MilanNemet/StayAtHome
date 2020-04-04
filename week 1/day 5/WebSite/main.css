@@ -8,7 +8,7 @@
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
-    max-width: 80vw;
+    width: 90vw;
     margin: auto;
 }
 
@@ -16,14 +16,17 @@ nav {
     color: white;
     font-size: 2em;
     display: flex;
+	flex-wrap: wrap;
     justify-content: space-evenly;
     justify-items: center;
     padding: 2vmin;
-    max-height: 10vh;
+    /* min-height: 10vh; */
 }
 nav > a {
+	font-weight: bold;
     cursor: pointer;
     display: inline-block;
+	padding: 5px;
 }
     nav > a:hover {
         color: #FEE;
@@ -34,7 +37,7 @@ nav > a {
     padding: 0;
     margin: 0;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
     /*align-content: start;*/
     /*later: further flex properties*/
@@ -49,13 +52,14 @@ header {
     background-size: contain;
     padding: 5%;
     width: 30%;
-    height: 75vh;
+	min-width: 200px;
+	height: 80vmin;
 }
 header > h1 {
     display: inline-block;
     position: absolute;
     right: -4%;
-    bottom: 0;
+    bottom: 10%;
     color: #222;
     font-size: 9vh;
     line-height: 9vh;
@@ -66,7 +70,7 @@ header > img {
     border-radius: 100%;
     max-width: 75%;
     position: relative;
-    top: 5%;
+    top: 5vmin;
 }
 h1::first-line {
     font-size: 4.5vh;
@@ -77,6 +81,10 @@ section {
     display: inline-block;
     max-width: 50%;
     padding: 3% 0 0 10%;
+	min-width: 300px;
+}
+section * {
+	padding-right: 5px;
 }
 section > ul {
     list-style-type: square;
