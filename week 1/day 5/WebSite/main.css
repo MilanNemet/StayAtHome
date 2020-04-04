@@ -26,12 +26,16 @@ nav > a {
 	font-weight: bold;
     cursor: pointer;
     display: inline-block;
-	padding: 5px;
+	padding: 10px;
 }
-    nav > a:hover {
-        color: #FEE;
-        text-shadow: 1px 1px 3px #F00, -1px -1px 3px #F00, 1px -1px 3px #F00, -1px 1px 3px #F00, 0px 0px 10px #F00, 0px 0px 20px #F00, 0px 0px 30px #F00;
-    }
+nav > a:hover {
+    color: #EEF;
+    text-shadow: 1px 1px 3px #0AF, -1px -1px 3px #0AF, 1px -1px 3px #0AF, -1px 1px 3px #0AF, 0px 0px 10px #0AF, 0px 0px 20px #0AF, 0px 0px 30px #0AF, 0px 0px 30px #0AF, 0px 0px 30px #0AF;
+}
+nav > a:active {
+    color: #FEF;
+    text-shadow: 1px 1px 3px #F0F, -1px -1px 3px #F0F, 1px -1px 3px #F0F, -1px 1px 3px #F0F, 0px 0px 10px #F0F, 0px 0px 20px #F0F, 0px 0px 30px #F0F, 0px 0px 30px #F0F, 0px 0px 30px #F0F;
+}
 .container {
     background-color: white;
     padding: 0;
@@ -95,7 +99,7 @@ blockquote {
     background-color: #222;
     font-size: 2em;
     padding: 1em;
-    margin: 0;
+    margin: 2em 0 0 0;
     position: relative;
 }
 blockquote::before {
@@ -112,4 +116,13 @@ h2 {
 
 .abrilff {
     font-family: 'Abril Fatface', cursive;
+}
+
+.active {
+    color: #EFE;
+    text-shadow: 1px 1px 3px #0F0, -1px -1px 3px #0F0, 1px -1px 3px #0F0, -1px 1px 3px #0F0, 0px 0px 10px #0F0, 0px 0px 20px #0F0, 0px 0px 30px #0F0, 0px 0px 30px #0F0;
+}
+.passive {
+    color: #FEE;
+    text-shadow: 1px 1px 3px #F00, -1px -1px 3px #F00, 1px -1px 3px #F00, -1px 1px 3px #F00, 0px 0px 10px #F00, 0px 0px 20px #F00, 0px 0px 30px #F00, 0px 0px 30px #F00, 0px 0px 30px #F00;
 }
