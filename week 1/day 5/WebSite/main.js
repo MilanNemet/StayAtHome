@@ -6,16 +6,16 @@ window.onload = function () {
     sections = document.querySelectorAll("section");
     links = document.querySelectorAll("nav > a");
 
-    initLinks(links, hideElement);
+    initSources(links, "click", handleEvent);
 }
 
-var initLinks = function (links, hide) {
-    for (var i = 0; i < links.length; i++) {
-        links[i].addEventListener("click", hide);
+var initSources = function (sources, event, handler) {
+    for (var i = 0; i < sources.length; i++) {
+        links[i].addEventListener(event, handler);
     }
 }
 
-var hideElement = function (event) {
+var handleEvent = function (event) {
 
     var elementId = event.target.id;
     var index = elementId[elementId.length - 1];
@@ -23,9 +23,11 @@ var hideElement = function (event) {
     for (var i = 0; i < sections.length; i++) {
         if (i+1 == index) {
             sections[i].style.display = "inline-block";
+            links[i].className = "active";
         }
         else {
             sections[i].style.display = "none";
+            links[i].className = "passive";
         }
     }
 }
