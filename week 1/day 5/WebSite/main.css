@@ -20,7 +20,7 @@ nav {
     justify-content: space-evenly;
     justify-items: center;
     padding: 2vmin;
-    /* min-height: 10vh; */
+    max-height: 20vmin; 
 }
 nav > a {
 	font-weight: bold;
@@ -43,26 +43,39 @@ nav > a:active {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    z-index: -1;
     /*align-content: start;*/
     /*later: further flex properties*/
 }
 header {
     display: inline-block;
     position: relative;
-    background-color: aliceblue;
-    background-image: url("http://stayathome-syllabus.greenfox.academy/week01/assets/first-website-header.png");
-    background-repeat: repeat-y;
-    background-position: right bottom;
-    background-size: contain;
     padding: 5%;
     width: 30%;
-	min-width: 200px;
-	height: 80vmin;
+    min-width: 200px;
+    height: 80vmin;
+}
+    header::after {
+        content: "";
+        background-color: aliceblue;
+        background-image: url("http://stayathome-syllabus.greenfox.academy/week01/assets/first-website-header.png");
+        background-repeat: repeat-y;
+        background-position: center top;
+        background-size: contain;
+        opacity: 0.5;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: absolute;
+    }
+header * {
+    z-index: 1;
 }
 header > h1 {
     display: inline-block;
     position: absolute;
-    right: -4%;
+    right: -5%;
     bottom: 10%;
     color: #222;
     font-size: 9vh;
