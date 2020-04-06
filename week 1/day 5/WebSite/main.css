@@ -49,12 +49,9 @@ nav > a:active {
 }
 header {
     flex: 0 1 none;
-    /*flex-grow: 0;
-    flex-shrink: 0;*/
     display: inline-block;
     position: relative;
     padding: 5%;
-    /*width: 30%;*/
     min-width: 300px;
     height: 65vmin;
 }
@@ -75,15 +72,6 @@ header::after {
 header * {
     z-index: 1;
 }
-header > h1 {
-    display: inline-block;
-    position: absolute;
-    right: -5%;
-    bottom: 10%;
-    color: #222;
-    font-size: 9vh;
-    line-height: 9vh;
-}
 header > img {
     display: block;
     margin: auto;
@@ -94,19 +82,24 @@ header > img {
     position: relative;
     top: 5vmin;
 }
+header > h1 {
+    display: inline-block;
+    position: absolute;
+    right: -5%;
+    bottom: 10%;
+    color: #222;
+    font-size: 9vh;
+    line-height: 9vh;
+}
 h1::first-line {
     font-size: 4.5vh;
     line-height: 4.5vh;
 }
 
 section {
-    flex: 0 1 none;
-    /*flex-grow: 0;
-    flex-shrink: 0;*/
     display: inline-block;
     max-width: 50%;
     padding: 3% 0 0 10%;
-    /*min-width: 300px;*/
 }
 section * {
     padding-right: 5px;
